@@ -76,7 +76,7 @@ function themSV() {
     isValid &= validation.checkDropdown("chucvu", "tbChucVu", "Bạn chưa chọn Chức Vụ");
 
     //Kiem tra pass  
-    // isValid &= validation.checkEmpty(pass,"tbMatKhau","Mat khau không được để trống!") && validation.checkPass(pass, "tbMatKhau", "Pass chưa đúng định dạng") ;
+    isValid &= validation.checkEmpty(pass,"tbMatKhau","Mat khau không được để trống!") && validation.checkPass(pass, "tbMatKhau", "Pass chưa đúng định dạng") ; 
 
     //Kiem tra Lương Cơ bản
     isValid &= validation.checkEmpty(luongCB, "tbLuongCB", "Lương không được để trống!") && validation.checkinteger(luongCB, "tbLuongCB", "Lương không đúng định dạng") && validation.checkluong(luongCB, "tbLuongCB", "Lương Không Đúng Quy Định");
